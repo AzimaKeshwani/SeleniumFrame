@@ -1,0 +1,126 @@
+2024-11-06 05:15:52 [main] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:15:55 [main] INFO  testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 05:15:55 [main] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 05:17:49 [main] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:17:52 [main] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 05:17:52 [main] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 05:30:06 [main] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:30:08 [main] ERROR testCases.AccountRegistrationTest - An exception occurred during account creation: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.92)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13f2fb1f66e991ea004adadaef166bcc, findElement {value=#input-firstname, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\azima\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51118}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51118/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13f2fb1f66e991ea004adadaef166bcc
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.92)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13f2fb1f66e991ea004adadaef166bcc, findElement {value=#input-firstname, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\azima\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51118}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51118/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13f2fb1f66e991ea004adadaef166bcc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.25.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.25.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy26.sendKeys(Unknown Source) ~[?:?]
+	at pageObjects.register.setFirstName(register.java:42) ~[test-classes/:?]
+	at testCases.AccountRegistrationTest.verify_account_creation(AccountRegistrationTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.7.0.jar:7.7.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.7.0.jar:7.7.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:829) [testng-7.7.0.jar:7.7.0]
+	at org.testng.TestRunner.run(TestRunner.java:602) [testng-7.7.0.jar:7.7.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437) [testng-7.7.0.jar:7.7.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431) [testng-7.7.0.jar:7.7.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391) [testng-7.7.0.jar:7.7.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) [testng-7.7.0.jar:7.7.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.7.0.jar:7.7.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.7.0.jar:7.7.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) [testng-7.7.0.jar:7.7.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) [testng-7.7.0.jar:7.7.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) [testng-7.7.0.jar:7.7.0]
+	at org.testng.TestNG.run(TestNG.java:1067) [testng-7.7.0.jar:7.7.0]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2024-11-06 05:30:08 [main] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 05:37:42 [main] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:37:46 [main] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 05:37:46 [main] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 05:47:44 [main] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:47:46 [main] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 05:47:46 [main] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 05:52:17 [main] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:52:21 [main] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 05:52:21 [main] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 05:52:24 [main] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:52:27 [main] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 05:52:27 [main] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 05:52:34 [main] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:52:37 [main] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 05:52:37 [main] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 05:53:25 [TestNG-tests-1] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:53:27 [TestNG-tests-2] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:53:27 [TestNG-tests-3] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:53:28 [TestNG-tests-1] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 05:53:28 [TestNG-tests-1] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 05:53:30 [TestNG-tests-3] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 05:53:30 [TestNG-tests-3] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 05:53:32 [TestNG-tests-2] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 05:53:32 [TestNG-tests-2] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 05:54:14 [TestNG-tests-1] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:54:16 [TestNG-tests-2] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:54:16 [TestNG-tests-3] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 05:54:17 [TestNG-tests-1] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 05:54:17 [TestNG-tests-1] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 05:54:19 [TestNG-tests-3] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 05:54:19 [TestNG-tests-3] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 05:54:20 [TestNG-tests-2] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 05:54:20 [TestNG-tests-2] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 08:09:59 [TestNG-tests-1] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 08:10:00 [TestNG-tests-2] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 08:10:04 [TestNG-tests-3] INFO  testCases.AccountRegistrationTest - Starting Account Creation
+2024-11-06 08:10:04 [TestNG-tests-1] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 08:10:04 [TestNG-tests-1] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 08:10:05 [TestNG-tests-2] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 08:10:05 [TestNG-tests-2] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 08:10:06 [TestNG-tests-3] DEBUG testCases.AccountRegistrationTest - Account creation successful
+2024-11-06 08:10:06 [TestNG-tests-3] INFO  testCases.AccountRegistrationTest - Finished Account creation process.
+2024-11-06 11:51:59 [main] INFO  testCases.LoginTest - Starting login test
+2024-11-06 11:57:34 [main] INFO  testCases.LoginTest - Starting login test
+2024-11-06 11:58:41 [main] INFO  testCases.LoginTest - Starting login test
+2024-11-06 11:59:30 [main] INFO  testCases.LoginTest - Starting login test
+2024-11-06 12:02:52 [main] INFO  testCases.LoginTest - Starting login test
+2024-11-06 12:05:22 [main] INFO  testCases.LoginTest - Starting login test
+2024-11-06 12:06:24 [main] INFO  testCases.LoginTest - Starting login test
+2024-11-06 12:07:12 [main] INFO  testCases.LoginTest - Starting login test
+2024-11-06 12:08:23 [main] INFO  testCases.LoginTest - Starting login test
+2024-11-06 12:08:25 [main] INFO  testCases.LoginTest - Finished Login test
+2024-11-06 12:09:44 [main] INFO  testCases.LoginTest - Starting login test
+2024-11-06 12:09:45 [main] INFO  testCases.LoginTest - Finished Login test
+2024-11-06 12:10:38 [main] INFO  testCases.LoginTest - Starting login test
+2024-11-06 12:10:40 [main] INFO  testCases.LoginTest - Finished Login test

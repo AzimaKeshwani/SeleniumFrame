@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="3" parallel="tests">
+    <test verbose="2" name="ChromeTest">
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+            <!-- Correctly reference the class using the fully qualified name -->
+            <class name="testCases.AccountRegistrationTest"/>
+        </classes>
+    </test>
+    <test verbose="2" name="EdgeTest">
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="edge"/>
+
+        <classes>
+            <!-- Correctly reference the class using the fully qualified name -->
+            <class name="testCases.AccountRegistrationTest"/>
+        </classes>
+    </test>
+    <test verbose="2" name="FireFoxTest">
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="firefox"/>
+
+        <classes>
+            <!-- Correctly reference the class using the fully qualified name -->
+            <class name="testCases.AccountRegistrationTest"/>
+        </classes>
+    </test>
+</suite>
